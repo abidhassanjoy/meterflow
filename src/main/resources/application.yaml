@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: meterflow
+  datasource:
+    url: jdbc:postgresql://localhost:5432/meterflow
+    username: meterflow
+    password: meterflow
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  batch:
+    job:
+      enabled: false

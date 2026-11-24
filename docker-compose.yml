@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: meterflow-db
+    environment:
+      POSTGRES_DB: meterflow
+      POSTGRES_USER: meterflow
+      POSTGRES_PASSWORD: meterflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - meterflow-data:/var/lib/postgresql/data
+
+volumes:
+  meterflow-data:
